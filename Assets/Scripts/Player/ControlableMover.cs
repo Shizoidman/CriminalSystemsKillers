@@ -18,7 +18,7 @@ namespace Assets.Scripts
         private void FixedUpdate()
         {
             Vector3 moveDirection = new Vector3(_inputHandler.Horizontal, 0, _inputHandler.Vertical);
-            _controller.Move(moveDirection * _moveSpeed * Time.deltaTime);
+            _controller.Move(moveDirection * _moveSpeed * Time.fixedDeltaTime);
         }
     }
 }
